@@ -6,6 +6,8 @@ jobs:
   run-some-scripts:
     runs-on: ubuntu-latest
     steps:
+      - name: find path
+        run: cd C:\Users\DHI-LAP\IdeaProjects\YAMLTEST\src\main\java\com\example\yamltest
       - name: compile java
         run: javac Main.java
       - name: run scipt
