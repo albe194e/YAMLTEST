@@ -1,0 +1,49 @@
+name: Ali
+age: 25
+address:
+  city: Tehran
+  country: Iran
+
+active: true
+not_active: false
+
+key:
+  key1: value1
+  key2: value2
+
+som-json: { "key1": "value1", "key2": "value2" }
+
+jobs:
+  - name: job1
+    active: true
+  - name: job2
+    active: false
+  - name: job3
+    active: true
+
+employees:
+  - name: Ali
+    age: 25
+    address:
+      city: Tehran
+      country: Iran
+  - name: Reza
+    age: 30
+    address:
+      city: Tehran
+      country: Iran
+  - name: Sara
+    age: 28
+    address:
+      city: Tehran
+      country: Iran
+
+longtext: >
+    hello there
+  
+    this is a long text
+    with multiple lines
+    and some spaces
+  
+    end of long text
+
