@@ -3,27 +3,11 @@ name: my first action
 on: [push]
 
 jobs:
-  run-shell-command:
+  run-some-scripts:
     runs-on: ubuntu-latest
     steps:
-      - name: echo a string
-        run: echo "hello world"
-      - name: multiline script
+      - name: compile java
+        run: javac Main.java
+      - name: run scipt
         run: |
-         node -v
-         npm -v
-      - name: python command
-        run: | 
-          import platform
-          print(platform.python_version())
-        shell: python
-  run-windows-command:
-    runs-on: windows-latest
-    steps:
-      - name: Directory Powershell
-        run: |
-          Get-Location
-      - name: Directory bash
-        run: |
-          pwd
-        shell: bash
+            java Main
